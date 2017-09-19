@@ -1,14 +1,30 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Student Simulator
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
+  
+  <ion-card>
+    <ion-item>
+        <ion-avatar item-start>
+            <ion-icon name="contact"></ion-icon>
+          </ion-avatar>
+          <ion-item>
+            <p>C.R: {{status.cr}}</p>
+            <p>Fome: {{status.fome}}</p>
+            <p>Energia: {{status.energia}}</p>
+          </ion-item>
+    </ion-item>
+  </ion-card>
+
   <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
+    <button class="buttonHome" ion-button block (click)="goToHome()">Home</button>
+  </p>
+  <p>
+    <button class="buttonHome" ion-button block (click)="goToUFAM()">UFAM</button>
   </p>
 </ion-content>

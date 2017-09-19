@@ -1,0 +1,59 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Ufam</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-card>
+      <ion-item>
+          <ion-avatar item-start>
+              <ion-icon name="contact"></ion-icon>
+            </ion-avatar>
+            <ion-item>
+              <p>C.R: {{status.cr}}</p>
+              <p>Fome: {{status.fome}}</p>
+              <p>Energia: {{status.energia}}</p>
+            </ion-item>
+      </ion-item>
+    </ion-card>
+    <ion-card>
+      <ion-item>
+        <ion-header ion-item>
+          Coisas para fazer na UFAM
+        </ion-header>
+      </ion-item>
+
+      <ion-item>
+        <ion-list>
+          <button ion-item (click)="doAtividade(0)">
+            Comer no R.U.
+            <p>-0.1 CR</p>
+            <p>+4 Fome</p>
+            <p>-2 Energia</p>
+          </button>
+        
+
+        <button ion-item (click)="doAtividade(1)">
+          Estudar na biblioteca
+          <p>+0.1 CR</p>
+          <p>-10 Fome</p>
+          <p>-15 Energia</p>
+        </button>
+
+        <button ion-item (click)="doAtividade(2)">
+          Assitir uma aula
+          <p>+0.3 CR</p>
+          <p>-15 Fome</p>
+          <p>-10 Energia</p>
+        </button>
+
+        </ion-list>
+      </ion-item>
+    </ion-card>
+
+</ion-content>
